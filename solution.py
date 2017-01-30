@@ -26,6 +26,9 @@ units = dict((s, [u for u in unitlist if s in u]) for s in boxes)
 peers = dict((s, set(sum(units[s],[]))-set([s])) for s in boxes)
 
 def find_naked_twins_in_unit(values, unit):
+    """
+    Given a unit, return the list of naked twins values in that unit if exists, else False
+    """
     value_counts = {}
     results = []
     for box in unit:
