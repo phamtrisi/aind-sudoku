@@ -7,7 +7,7 @@ A: When we have 2 boxes in the same unit that allow the same 2 possibilities, we
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: By including the 2 diagonal units in the list of all possible units
+A: We treat the 2 diagonal lines the same as other units, with the same constraints. Therefore, we were able to use the same elimination and search techniques to reduce and test the possibilities for the boxes in those diagonal units.
 
 ### Install
 
